@@ -1,77 +1,120 @@
 <?php
+    $a =10;
+    $b =5;
+    $soma = $a + $b; 
+    echo "A soma é: $soma";
+    echo "<hr>";
 
-    $n1 = 4;
-    $n2 = 6;
-    $n3 = 8;
-    $media = ($n1 + $n2 + $n3) / 3;
-    if ($media>= 5) {
-        echo "Aprovado com média: $media";
+    //ESTRUTURAS CONDICIONAIS
+    //IF
 
-
-
-    } else 
-        if ($media<4) {
-            echo "Reprovado com média: $media";
-        } else {
-        echo "Recuperação";
+    if ($b > $a) {
+        echo "B é maior que A";
+    } else {
+        echo "B não é maior que A";
     }
+    
+    echo "<hr>";
 
+    $n1=4;
+    $n2=5;
+    $n3=6;
+
+    $media = ($n1 + $n2 + $n3)/3;
+
+    echo "Sua média é: $media : ";
+
+    if ($media > 5) {
+        echo "Aprovado";
+    } else {
+        if ($media < 4) {
+            echo "Reprovado";
+        } else {
+            echo "Recuperação";
+        }
+    }
 
     echo "<hr>";
 
-    $dia = 7 ;
+
+    $dia=10;
+
     switch ($dia) {
         case 1:
-            echo "domingo";
+        echo "Domingo";
             break;
         case 2:
-            echo "segunda";
+        echo "Segunda";
             break;
         case 3:
-            echo "terça";
+        echo "Terça";
             break;
         case 4:
-            echo "quarta";
+        echo "Quarta";
             break;
         case 5:
-            echo "quinta";
+        echo "Quinta";
             break;
         case 6:
-            echo "sexta";
+        echo "Sexta";
             break;
         case 7:
-            echo "sábado";
+        echo "Sabado";
             break;
+        
         default:
-            echo "Dia inválido";
+            Echo "Número inválido";
+            break;
     }
 
     echo "<hr>";
 
-    for ($i = 0; $i < 10; $i++) {
+    for ($i=1; $i <= 10 ; $i++) { 
         echo "$i - ";
     }
 
     echo "<hr>";
 
-    $a = 1;
-    while ($a < 10) {
+
+    $a= 1;
+    while ($a <= 10) {
         echo "$a - ";
         $a++;
     }
 
-      echo "<hr>";
+    echo "<hr>";
 
-    $b = 1;
+
+    $x=1;
     do {
-        echo "$b - ";
-        $b++;
-    } while ($b < 10);
+        echo "$x - ";
+        $x++;
+    } while ($x <= 10);
 
     echo "<hr>";
 
-    $frutas = ["maçã", "banana", "laranja"];
-    foreach ($frutas as $fruta) {
-        echo "o nome é: $fruta <br  >";
-    }
+    $nomes = ['Fulano','Beltrano','Ciclano'];
+
+    $qtd = count($nomes);
+
+    //echo $nomes;
+
+    echo $nomes[0];
+    echo "<br>";
+    echo $nomes[1];
+    echo "<br>";
+    echo $nomes[2];
+    echo "<br>";
+
+    echo "<hr>";
     
+    //for ($n=0; $n <= $qtde ; $n++){
+    //    echo $nomes[$n]. "<br>";
+    //}
+
+    foreach ($nomes as $nome) {
+        echo "$nome <br>";
+    }
+        
+    
+?>
