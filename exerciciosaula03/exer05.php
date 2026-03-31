@@ -1,11 +1,21 @@
 <?php
-function somaArray($array) {
+
+function somaArray($numeros){
+
+
     $soma = 0;
-
-    foreach ($array as $valor) {
-        $soma += $valor;
+    
+    for($i = 0; $i < count($numeros); $i++){
+        $soma = $soma + $numeros[$i];
     }
-
+    
     return $soma;
 }
+
+$array = array(1, 2, 3, 4, 5);
+echo somaArray($array);
+
+
+
+
 ?>

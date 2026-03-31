@@ -1,11 +1,20 @@
 <?php
-function somaArray2($array) {
+
+
+
+function somaElementos($numeros){
     $soma = 0;
 
-    foreach ($array as $valor) {
-        $soma += $valor;
+    for($i = 0; $i < count($numeros); $i++){
+        $soma = $soma + $numeros[$i];
     }
 
     return $soma;
 }
+
+$valores = array(10, 20, 30, 40);
+
+echo somaElementos($valores);
+
+
 ?>

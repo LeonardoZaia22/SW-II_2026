@@ -1,11 +1,15 @@
 <?php
-function tabuada($numero) {
-    $resultado = [];
 
-    for ($i = 1; $i <= 10; $i++) {
-        $resultado[] = "$numero x $i = " . ($numero * $i);
+
+function tabuada($numero){
+
+
+    for($i = 1; $i <= 10; $i++){
+        echo "$numero x $i = " . ($numero * $i) . "<br>";
     }
-
-    return $resultado;
 }
+
+tabuada(5);
+
+
 ?>

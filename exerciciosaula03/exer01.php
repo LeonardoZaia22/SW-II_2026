@@ -1,19 +1,12 @@
-<!-- Crie uma função que receba um nome e exiba uma mensagem de boas-vindas. -->
-
 <?php
 
 
 
-
-
-$nome = "Zaia";
-function boas_vindas($nome) {
-
-    echo "Bem-vindo, $nome";
-
+function boasVindas($nome){
+    echo "Olá, $nome! Seja bem-vindo!";
 }
 
+boasVindas("Leonardo");
 
-boas_vindas($nome);
 
 ?>

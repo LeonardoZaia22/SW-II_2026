@@ -1,11 +1,18 @@
 <?php
-function fatorial($numero) {
+
+function fatorial($numero){
+    
     $resultado = 1;
 
-    for ($i = 1; $i <= $numero; $i++) {
-        $resultado *= $i;
+    for($i = 1; $i <= $numero; $i++){
+        $resultado = $resultado * $i;
     }
 
     return $resultado;
 }
+
+
+echo fatorial(5);
+
+
 ?>
