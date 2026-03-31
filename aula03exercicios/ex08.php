@@ -1,17 +1,10 @@
 <?php
-function gerarArray(){
-    $numeros = array();
+    $num = 30;
 
-    for($i = 0; $i < 10; $i++){
-        $numeros[$i] = rand(1, 100);
+
+    for ($i=1; $i <= 10 ; $i++) { 
+        $resultado = $num * $i;
+        echo "$num * $i = $resultado <br>";
     }
 
-    return $numeros;
-}
-
-$resultado = gerarArray();
-
-for($i = 0; $i < count($resultado); $i++){
-    echo $resultado[$i] . "<br>";
-}
 ?>

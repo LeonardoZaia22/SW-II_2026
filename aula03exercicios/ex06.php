@@ -1,9 +1,10 @@
 <?php
-function tabuadaNumero($numero){
-    for($i = 1; $i <= 10; $i++){
-        echo $numero . " x " . $i . " = " . ($numero * $i) . "<br>";
-    }
-}
+    $soma = 0;
 
-tabuadaNumero(3);
+    for ($i=0; $i <= 50 ; $i++) { 
+        $soma = $soma + $i;
+    }echo "A soma de todos os números de 1 a 50 é $soma <br>";
+        
+
+
 ?>

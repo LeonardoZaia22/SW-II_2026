@@ -1,7 +1,13 @@
 <?php
-function boasVindas($nome){
-    echo "Olá, $nome! Seja bem-vindo!";
-}
+    $nome = "Leo";
+    $idade = 17;
+    $cidade = "Riberão";
 
-boasVindas("Leonardo");
+
+    echo "Nome: $nome <br>";
+    echo "Idade: $idade <br>";
+    echo "Cidade: $cidade <br>";
+
+
+
 ?>

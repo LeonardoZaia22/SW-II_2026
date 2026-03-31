@@ -1,14 +1,8 @@
 <?php
-function somaElementos($numeros){
-    $soma = 0;
+    $nomes = ["Casemiro","Robinho","Thaciano","Messi", "Cristiano Ronaldo", "Neymar"];
 
-    for($i = 0; $i < count($numeros); $i++){
-        $soma = $soma + $numeros[$i];
+    foreach ($nomes as $nome) {
+        echo "$nome<br>";
     }
 
-    return $soma;
-}
-
-$valores = array(10, 20, 30, 40);
-echo somaElementos($valores);
 ?>
