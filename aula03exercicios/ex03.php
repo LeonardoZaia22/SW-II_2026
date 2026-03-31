@@ -1,11 +1,11 @@
 <?php
-    $num = 5;
-
-    if ($num % 2 == 0 ) {
-        echo "O número $num é par";
+function parOuImpar($numero){
+    if($numero % 2 == 0){
+        echo "Número par";
     } else {
-         echo "O número $num é impar";
+        echo "Número ímpar";
     }
-    
+}
 
+parOuImpar(7);
 ?>

@@ -1,18 +1,7 @@
 <?php
-    $num = 1;
+function diferenca($num1, $num2){
+    return $num1 - $num2;
+}
 
-    if ($num > 0) {
-        echo "O número $num é positivo";
-    } else {
-        if ($num < 0) {
-            echo "O número $num é negativo";
-        } else {
-            echo "O número $num é zero";
-        }
-        
-    }
-    
-
-
-
+echo diferenca(10, 5);
 ?>

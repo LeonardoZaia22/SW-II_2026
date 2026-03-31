@@ -1,18 +1,9 @@
 <?php
-$opcao = 3; 
-
-switch ($opcao) {
-    case 1:
-        echo "Entrar";
-        break;
-    case 2:
-        echo "Sair";
-        break;
-    case 3:
-        echo "Salvar";
-        break;
-    default:
-        echo "Opção inválida";
-        break;
+function tabuada($numero){
+    for($i = 1; $i <= 10; $i++){
+        echo "$numero x $i = " . ($numero * $i) . "<br>";
+    }
 }
+
+tabuada(5);
 ?>
